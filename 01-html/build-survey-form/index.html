@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">FreeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to complete this survey!</p>
+    <form id="survey-form">
+      <label id="name-label" for="name">Name</label>
+      <input id="name" type="text" placeholder="Enter your name" required></input>
+    </form>
+
+    <form id="survey-form">
+      <label id="email-label" for="email">Email</label>
+      <input id="email" type="email" placeholder="Enter your email" required></input>
+    </form>
+
+    <form id="survey-form">
+      <label id="number-label" for="number">Number</label>
+      <input id="number" type="number" min="3" max="100" placeholder="Enter your number" required></input>
+    </form>
+
+    <form id="survey-form">
+      <label id="dropdown-label" for="dropdown">Which option best describes your current role?</label>
+        <select id="dropdown" required>
+          <option value="" disabled selected>Select current role</option>
+          <option value="student">Student</option>
+          <option value="job">Full-Time Job</option>
+          <option value="other">Other</option>
+        </select>
+
+        <p>Would you recommend freeCodeCamp to a friend?</p>
+        <label>
+          <input type="checkbox" name="recommend" value="definetely" checked>Definetely</input>
+          <input type="radio" name="recommend" value="sure">Sure</input>
+          <input type="checkbox" name="recommend" value="maybe">Maybe</input>
+          <input type="radio" name="recommend" value="not sure">Not sure</input>
+          <input type="radio" name="recommend" value="never">Never</input>
+          <form id="survey-form">
+            <p>Any comments or suggestions?</p>
+            <textarea id="comments" name="comments" placeholder="Enter your comment here..."></textarea>
+            <button id="submit" type="submit">Submit</button>
+          </form>
+
+    </form>
+
+  </body>
+</html>
