@@ -1,0 +1,34 @@
+.form-container {
+  background-color: lightblue;
+  border-radius: 20px;
+  padding: 70px;
+  width: 250px;
+}
+
+label {
+  display: inline-block;
+  margin: 8px;
+  color: #2563eb;
+  font-weight: 500; 
+}
+
+input {
+  width: 180px;
+  padding: 8px;
+  margin-bottom: 8px;
+}
+
+textarea {
+  width: 180px;
+  padding: 8px;
+  margin-bottom: 8px;
+}
+
+button {
+  background-color: blue;
+  font-size: 15px;
+}
+
+button:hover {
+  background-color: green;
+}
