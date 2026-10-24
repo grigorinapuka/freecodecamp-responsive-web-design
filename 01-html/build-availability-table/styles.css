@@ -1,0 +1,54 @@
+:root {
+  --color0: #fef0d9;
+  --color1: #fdd49e;
+  --color2: #fdbb84;
+  --color3: #fc8d59;
+  --color4: #ef6548;
+  --color5: #d7301f;
+  --solid-border: 1px solid #000;
+  --dashed-border: 1px dashed #000;
+}
+
+.available-0 {
+  background-color: var(--color0);
+}
+
+.available-1 {
+  background-color: var(--color1);
+}
+
+.available-2 {
+  background-color: var(--color2);
+}
+
+.available-3 {
+  background-color: var(--color3);
+}
+
+.available-4 {
+  background-color: var(--color4);
+}
+
+.available-5 {
+  background-color: var(--color5);
+}
+
+.sharp td {
+  border-bottom: var(--solid-border);
+}
+
+.half td {
+  border-bottom: var(--dashed-border);
+}
+
+#legend-gradient {
+  background-image: linear-gradient(
+    to right,
+    var(--color0) 0%, var(--color0) 17%,
+    var(--color1) 17%, var(--color1) 34%,
+    var(--color2) 34%, var(--color2) 50%,
+    var(--color3) 50%, var(--color3) 67%,
+    var(--color4) 67%, var(--color4) 85%,
+    var(--color5) 85%, var(--color5) 100%
+  );
+}
