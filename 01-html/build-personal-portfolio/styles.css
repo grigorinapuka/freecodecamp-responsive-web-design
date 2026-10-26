@@ -1,0 +1,82 @@
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  padding-top: 60px; /* Prevents navbar from overlapping content */
+}
+
+/* Requirement 7 & 12: Fixed Top Navbar */
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #333;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 2rem;
+  z-index: 1000;
+}
+
+/* Requirement 8: Navbar links starting with # */
+#navbar a {
+  color: white;
+  text-decoration: none;
+  margin-left: 2rem;
+}
+
+/* Requirement 1: Welcome Section */
+#welcome-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+}
+
+/* Requirement 4: Projects Section */
+#project-section {
+  padding: 4rem 2rem;
+  background-color: #ddd;
+  text-align: center;
+}
+
+.projects-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Requirement 5: Project Tile class */
+.project-tile {
+  background: white;
+  padding: 2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+}
+
+#profile-link-section {
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Requirement 11: Media Query for responsiveness */
+@media (max-width: 600px) {
+  .projects-grid {
+    flex-direction: column;
+  }
+  
+  #navbar {
+    justify-content: center;
+  }
+}
